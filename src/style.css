@@ -3,7 +3,7 @@ body {
 }
 .sig {
   margin-top: 0px;
-  font-size: 10px;
+  font-size: 12px;
 }
 .temp {
   position: relative;
@@ -61,4 +61,18 @@ div {
   width: 605px;
   height: 500px;
   opacity: 10%;
+}
+.searchForm {
+  position: relative;
+  bottom: 1470px;
+  left: 550px;
+}
+.searchInput {
+  height: 40px;
+  width: 300px;
+}
+.fa-solid {
+  position: relative;
+  bottom: 1495px;
+  left: 860px;
 }
