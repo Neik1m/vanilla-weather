@@ -7,7 +7,7 @@ body {
 }
 .temp {
   position: relative;
-  left: 560px;
+  left: 585px;
   top: 100px;
   font-size: 70px;
   color: white;
@@ -75,4 +75,86 @@ div {
   position: relative;
   bottom: 1495px;
   left: 860px;
+}
+
+.fiveDay {
+  position: relative;
+  bottom: 1470px;
+  left: 600px;
+  color: white;
+}
+
+.rain {
+  position: relative;
+  bottom: 1440px;
+  left: 600px;
+  height: 50px;
+  width: 50px;
+}
+
+.cloudy {
+  position: relative;
+  bottom: 1445px;
+  left: 635px;
+  height: 50px;
+  width: 50px;
+}
+
+.rainTwo {
+  position: relative;
+  bottom: 1440px;
+  left: 670px;
+  height: 50px;
+  width: 50px;
+}
+
+.rainThree {
+  position: relative;
+  bottom: 1440px;
+  left: 700px;
+  height: 50px;
+  width: 50px;
+}
+
+.rainFour {
+  position: relative;
+  bottom: 1440px;
+  left: 730px;
+  height: 50px;
+  width: 50px;
+}
+
+.dayOne {
+  position: relative;
+  bottom: 1460px;
+  left: 615px;
+  color: white;
+}
+
+.dayTwo {
+  position: relative;
+  bottom: 1495px;
+  left: 710px;
+  color: white;
+}
+
+.dayThree {
+  position: relative;
+  bottom: 1530px;
+  left: 795px;
+  color: white;
+}
+
+.dayFour {
+  position: relative;
+  bottom: 1565px;
+  left: 880px;
+  color: white;
+}
+
+.dayFive {
+  position: relative;
+  bottom: 1600px;
+  left: 960px;
+  color: white;
 }
