@@ -1,17 +1,13 @@
-function formattedDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
-
   if (hours < 10) {
     hours = `0${hours}`;
   }
-
   let minutes = date.getMinutes();
-
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
-  let dayIndex = date.getDay();
 
   let days = [
     "Sunday",
@@ -22,54 +18,47 @@ function formattedDate(date) {
     "Friday",
     "Saturday",
   ];
-  let day = days[dayIndex];
-
+  let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
 
-let dateElement = document.querySelector("#date-time");
-let currentTime = new Date();
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-let searchForm = document.querySelector("#search-form");
-
-searchForm.addEventListener("submit", search);
-
-function showTemperature(response) {
-  document.querySelector("#city-search").innerHTML = response.data.name;
-  document.querySelector("#api-temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#wind-speed").innerHTML = Math.round(
-    response.data.wind.speed
-  );
+  return days[day];
 }
 
-function search(event) {
-  event.preventDefault();
-  let city = document.querySelector("#city-input").value;
+function displayTemperature(response) {
+  let temperatureElement = document.querySelector("#api-temp");
+  let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind-speed");
+  let dateElement = document.querySelector("#date-time");
+
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+}
+
+function search(city) {
   let apiKey = "97b9838032fcdf9880d37346b3190f7d";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(displayTemperature);
 }
 
-dateElement.innerHTML = formattedDate(currentTime);
-
-function showPosition(position) {
-  let longitude = position.coords.longitude;
-  let latitude = position.coords.latitude;
-  let apiKey = "97b9838032fcdf9880d37346b3190f7d";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
 }
 
-function currentTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let head = (document.querySelector("#api-temp").innerHTML = Math.round(
-    response.data.main.temp
-  ));
-}
-
-navigator.geolocation.getCurrentPosition(showPosition);
-
-let currentLocationButton = document.querySelector("#button");
-currentLocationButton.addEventListener("click", showTemperature);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

@@ -18,14 +18,14 @@ body {
 .city {
   position: relative;
   left: 750px;
-  bottom: 20px;
+  bottom: 50px;
   font-size: 35px;
   color: white;
 }
 .date {
   position: relative;
   left: 750px;
-  bottom: 50px;
+  bottom: 80px;
   font-size: 15px;
   color: white;
 }
@@ -50,14 +50,14 @@ div {
 .balloon {
   position: relative;
   left: 472px;
-  bottom: 1030px;
+  bottom: 1175px;
   width: 605px;
   height: 500px;
   opacity: 10%;
 }
 .searchForm {
   position: relative;
-  bottom: 1550px;
+  bottom: 1600px;
   left: 550px;
 }
 .searchInput {
@@ -66,20 +66,20 @@ div {
 }
 .fa-solid {
   position: relative;
-  bottom: 1575px;
+  bottom: 1625px;
   left: 865px;
 }
 
 .fiveDay {
   position: relative;
-  bottom: 1550px;
+  bottom: 1580px;
   left: 600px;
   color: white;
 }
 
 .rain {
   position: relative;
-  bottom: 1520px;
+  bottom: 1550px;
   left: 600px;
   height: 50px;
   width: 50px;
@@ -87,7 +87,7 @@ div {
 
 .cloudy {
   position: relative;
-  bottom: 1520px;
+  bottom: 1550px;
   left: 635px;
   height: 50px;
   width: 50px;
@@ -95,7 +95,7 @@ div {
 
 .rainTwo {
   position: relative;
-  bottom: 1520px;
+  bottom: 1550px;
   left: 670px;
   height: 50px;
   width: 50px;
@@ -103,7 +103,7 @@ div {
 
 .rainThree {
   position: relative;
-  bottom: 1520px;
+  bottom: 1550px;
   left: 700px;
   height: 50px;
   width: 50px;
@@ -111,7 +111,7 @@ div {
 
 .rainFour {
   position: relative;
-  bottom: 1520px;
+  bottom: 1550px;
   left: 730px;
   height: 50px;
   width: 50px;
@@ -119,42 +119,42 @@ div {
 
 .dayOne {
   position: relative;
-  bottom: 1535px;
+  bottom: 1565px;
   left: 600px;
   color: white;
 }
 
 .dayTwo {
   position: relative;
-  bottom: 1570px;
+  bottom: 1600px;
   left: 690px;
   color: white;
 }
 
 .dayThree {
   position: relative;
-  bottom: 1605px;
+  bottom: 1634px;
   left: 775px;
   color: white;
 }
 
 .dayFour {
   position: relative;
-  bottom: 1640px;
+  bottom: 1669px;
   left: 860px;
   color: white;
 }
 
 .dayFive {
   position: relative;
-  bottom: 1674px;
+  bottom: 1704px;
   left: 948px;
   color: white;
 }
 
 .wind {
   position: relative;
-  bottom: 1630px;
+  bottom: 1660px;
   left: 780px;
   color: white;
   font-size: 15px;
@@ -162,8 +162,8 @@ div {
 
 .speed {
   position: relative;
-  bottom: 1663px;
-  left: 870px;
+  bottom: 1693px;
+  left: 860px;
   color: white;
   font-size: 15px;
 }
@@ -179,7 +179,7 @@ div {
 .button {
   position: relative;
   left: 870px;
-  bottom: 2020px;
+  bottom: 2115px;
   background-color: #c67896;
   color: white;
   padding: 0.6em 2em;
@@ -196,8 +196,40 @@ button:hover {
 
 .speedUnit {
   position: relative;
-  left: 890px;
-  bottom: 1696px;
+  left: 880px;
+  bottom: 1726px;
+  font-size: 15px;
+  color: white;
+}
+
+.unitC {
+  position: relative;
+  left: 688px;
+  bottom: 56px;
+  font-size: 25px;
+  color: white;
+}
+
+.descrip {
+  position: relative;
+  left: 779px;
+  bottom: 240px;
+  font-size: 15px;
+  color: white;
+}
+
+.humidity {
+  position: relative;
+  left: 781px;
+  bottom: 233px;
+  font-size: 15px;
+  color: white;
+}
+
+.humid {
+  position: relative;
+  left: 845px;
+  bottom: 265px;
   font-size: 15px;
   color: white;
 }
