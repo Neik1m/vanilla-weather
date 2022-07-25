@@ -29,13 +29,6 @@ body {
   font-size: 15px;
   color: white;
 }
-.sun {
-  position: relative;
-  left: 910px;
-  bottom: 150px;
-  width: 50px;
-  height: 50px;
-}
 .precip {
   position: relative;
   left: 923px;
@@ -57,14 +50,14 @@ div {
 .balloon {
   position: relative;
   left: 472px;
-  bottom: 1055px;
+  bottom: 1030px;
   width: 605px;
   height: 500px;
   opacity: 10%;
 }
 .searchForm {
   position: relative;
-  bottom: 1470px;
+  bottom: 1550px;
   left: 550px;
 }
 .searchInput {
@@ -73,20 +66,20 @@ div {
 }
 .fa-solid {
   position: relative;
-  bottom: 1495px;
-  left: 860px;
+  bottom: 1575px;
+  left: 865px;
 }
 
 .fiveDay {
   position: relative;
-  bottom: 1470px;
+  bottom: 1550px;
   left: 600px;
   color: white;
 }
 
 .rain {
   position: relative;
-  bottom: 1440px;
+  bottom: 1520px;
   left: 600px;
   height: 50px;
   width: 50px;
@@ -94,7 +87,7 @@ div {
 
 .cloudy {
   position: relative;
-  bottom: 1445px;
+  bottom: 1520px;
   left: 635px;
   height: 50px;
   width: 50px;
@@ -102,7 +95,7 @@ div {
 
 .rainTwo {
   position: relative;
-  bottom: 1440px;
+  bottom: 1520px;
   left: 670px;
   height: 50px;
   width: 50px;
@@ -110,7 +103,7 @@ div {
 
 .rainThree {
   position: relative;
-  bottom: 1440px;
+  bottom: 1520px;
   left: 700px;
   height: 50px;
   width: 50px;
@@ -118,7 +111,7 @@ div {
 
 .rainFour {
   position: relative;
-  bottom: 1440px;
+  bottom: 1520px;
   left: 730px;
   height: 50px;
   width: 50px;
@@ -126,35 +119,85 @@ div {
 
 .dayOne {
   position: relative;
-  bottom: 1460px;
-  left: 615px;
+  bottom: 1535px;
+  left: 600px;
   color: white;
 }
 
 .dayTwo {
   position: relative;
-  bottom: 1495px;
-  left: 710px;
+  bottom: 1570px;
+  left: 690px;
   color: white;
 }
 
 .dayThree {
   position: relative;
-  bottom: 1530px;
-  left: 795px;
+  bottom: 1605px;
+  left: 775px;
   color: white;
 }
 
 .dayFour {
   position: relative;
-  bottom: 1565px;
-  left: 880px;
+  bottom: 1640px;
+  left: 860px;
   color: white;
 }
 
 .dayFive {
   position: relative;
-  bottom: 1600px;
-  left: 960px;
+  bottom: 1674px;
+  left: 948px;
+  color: white;
+}
+
+.wind {
+  position: relative;
+  bottom: 1630px;
+  left: 780px;
+  color: white;
+  font-size: 15px;
+}
+
+.speed {
+  position: relative;
+  bottom: 1663px;
+  left: 870px;
+  color: white;
+  font-size: 15px;
+}
+
+.unit {
+  position: relative;
+  left: 665px;
+  bottom: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.button {
+  position: relative;
+  left: 870px;
+  bottom: 2020px;
+  background-color: #c67896;
+  color: white;
+  padding: 0.6em 2em;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  margin: 1em;
+}
+
+button:hover {
+  color: black;
+  background-color: #c67896;
+}
+
+.speedUnit {
+  position: relative;
+  left: 890px;
+  bottom: 1696px;
+  font-size: 15px;
   color: white;
 }
