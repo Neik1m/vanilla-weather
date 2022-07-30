@@ -22,13 +22,21 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayTemperature(response) {
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#api-temp");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind-speed");
-  let dateElement = document.querySelector("#date");
+  let dateElement = document.querySelector("#date-time");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -52,15 +60,5 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  alert("hi");
-}
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-search("New York");
