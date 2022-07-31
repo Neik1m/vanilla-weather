@@ -8,8 +8,8 @@ body {
 .temp {
   position: relative;
   left: 585px;
-  top: 100px;
-  font-size: 70px;
+  top: 10px;
+  font-size: 80px;
   color: white;
 }
 .back {
@@ -18,15 +18,15 @@ body {
 .city {
   position: relative;
   left: 750px;
-  bottom: 50px;
-  font-size: 35px;
+  bottom: 70px;
+  font-size: 45px;
   color: white;
 }
 .date {
   position: relative;
   left: 750px;
-  bottom: 80px;
-  font-size: 15px;
+  bottom: 110px;
+  font-size: 20px;
   color: white;
 }
 .precip {
@@ -49,8 +49,8 @@ div {
 }
 .balloon {
   position: relative;
-  left: 472px;
-  bottom: 1175px;
+  left: 405px;
+  bottom: 1200px;
   width: 605px;
   height: 500px;
   opacity: 10%;
@@ -70,116 +70,26 @@ div {
   left: 865px;
 }
 
-.fiveDay {
-  position: relative;
-  bottom: 1580px;
-  left: 600px;
-  color: white;
-}
-
-.rain {
-  position: relative;
-  bottom: 1550px;
-  left: 600px;
-  height: 50px;
-  width: 50px;
-}
-
-.cloudy {
-  position: relative;
-  bottom: 1550px;
-  left: 635px;
-  height: 50px;
-  width: 50px;
-}
-
-.rainTwo {
-  position: relative;
-  bottom: 1550px;
-  left: 670px;
-  height: 50px;
-  width: 50px;
-}
-
-.rainThree {
-  position: relative;
-  bottom: 1550px;
-  left: 700px;
-  height: 50px;
-  width: 50px;
-}
-
-.rainFour {
-  position: relative;
-  bottom: 1550px;
-  left: 730px;
-  height: 50px;
-  width: 50px;
-}
-
-.dayOne {
-  position: relative;
-  bottom: 1565px;
-  left: 600px;
-  color: white;
-}
-
-.dayTwo {
-  position: relative;
-  bottom: 1600px;
-  left: 690px;
-  color: white;
-}
-
-.dayThree {
-  position: relative;
-  bottom: 1634px;
-  left: 775px;
-  color: white;
-}
-
-.dayFour {
-  position: relative;
-  bottom: 1669px;
-  left: 860px;
-  color: white;
-}
-
-.dayFive {
-  position: relative;
-  bottom: 1704px;
-  left: 948px;
-  color: white;
-}
-
 .wind {
   position: relative;
-  bottom: 1660px;
-  left: 780px;
+  bottom: 1508px;
+  left: 878px;
   color: white;
   font-size: 15px;
 }
 
 .speed {
   position: relative;
-  bottom: 1693px;
-  left: 860px;
+  bottom: 1541px;
+  left: 960px;
   color: white;
   font-size: 15px;
-}
-
-.unit {
-  position: relative;
-  left: 665px;
-  bottom: 10px;
-  font-size: 25px;
-  color: white;
 }
 
 .button {
   position: relative;
   left: 870px;
-  bottom: 2115px;
+  bottom: 1850px;
   background-color: #c67896;
   color: white;
   padding: 0.6em 2em;
@@ -196,40 +106,48 @@ button:hover {
 
 .speedUnit {
   position: relative;
-  left: 880px;
-  bottom: 1726px;
+  left: 980px;
+  bottom: 1574px;
   font-size: 15px;
   color: white;
 }
 
 .unitC {
   position: relative;
-  left: 688px;
-  bottom: 56px;
+  left: 670px;
+  bottom: 115px;
   font-size: 25px;
   color: white;
 }
 
 .descrip {
   position: relative;
-  left: 779px;
+  left: 600px;
   bottom: 240px;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 
 .humidity {
   position: relative;
-  left: 781px;
-  bottom: 233px;
+  left: 880px;
+  bottom: 400px;
   font-size: 15px;
   color: white;
 }
 
 .humid {
   position: relative;
-  left: 845px;
-  bottom: 265px;
+  left: 945px;
+  bottom: 433px;
   font-size: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+.sunIcon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  bottom: 1400px;
+  left: 800px;
 }
