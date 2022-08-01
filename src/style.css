@@ -151,3 +151,10 @@ button:hover {
   bottom: 1400px;
   left: 800px;
 }
+
+.code {
+  position: relative;
+  bottom: 1350px;
+  left: 510px;
+  font-size: 13px;
+}
